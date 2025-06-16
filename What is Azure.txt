@@ -1,0 +1,23 @@
+What is Azure  
+
+Azure fundamentals is a series of six learning paths that familiarize you with Azure and its many services and features. Whether you're interested in Azure's core compute, network, storage, and database services learning about cloud security best practices, or exploring the cutting edge in IoT and machine learning, think of Azure fundamentals as your curated guide to Azure.  Azure is essentially an entire IT infrastructure that is available for rent on a mainly pay as you go basis.  
+
+Have you ever wondered what cloud computing is? It's the delivery of computing services over the internet, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
+
+
+Why is cloud computing typically cheaper?
+
+Cloud computing is the delivery of computing services over the internet by using a pay-as-you-go pricing model. You typically pay only for the cloud services you use, which helps you: 
+
+1
+Lower your operating costs.
+
+2
+Run your infrastructure more efficiently.
+
+3
+Scale as your business needs change
+
+To put it another way, cloud computing is a way to rent computing power and storage from someone else's data center. You can treat cloud resources like you would resources in your own data center. 
+
+When you're done using them, you give them back. You're billed only for what you use. Instead of maintaining CPUs and storage in your data center, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you. The cloud enables you to quickly solve your toughest business challenges, and bring cutting-edge solutions to your users. 
