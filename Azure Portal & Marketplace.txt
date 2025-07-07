@@ -1,0 +1,21 @@
+Azure Portal 
+
+The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface. You can:
+
+1 Build, manage, and monitor everything from simple web apps to complex cloud deployments
+
+2 Create custom dashboards for an organized view of resources
+
+3 Configure accessibility options for an optimal experience
+
+The Azure portal is designed for resiliency and continuous availability. It maintains a presence in every Azure data center. This configuration makes the Azure portal resilient to individual data center failures and avoids network slowdowns by being close to users. The Azure portal updates continuously and requires no downtime for maintenance activities.
+
+The solution catalogue spans several industry categories such as open-source container platforms, virtual machine images, databases, application build and deployment software, developer tools, threat detection, and blockchain. Using Azure Marketplace, you can provision end-to-end solutions quickly and reliably, hosted in your own Azure environment. 
+
+At the time of writing, there are more than 8,000 listings. Azure Marketplace is designed for IT pros and cloud developers interested in commercial and IT software. Microsoft partners also use it as a launch point for all joint go-to-market activities. 
+
+Summary
+
+In this lesson, we covered the basics of the Azure Portal and what it provides. The portal is a graphical user interface (GUI) that offers a layer of abstraction from things like the command line. You can configure services and resources with the click of a button without needing to understand any code. 
+
+We also covered Azure Marketplace and its main functions. Azure Marketplace connects with Microsoft partners, independent software vendors, and start-ups that offer services and solutions. You can get things like pre-configured machine images that are certified to run on Azure. 
