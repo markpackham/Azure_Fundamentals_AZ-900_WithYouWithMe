@@ -5,10 +5,7 @@ The term 'compute' simply refers to the on-demand use or provisioning of typical
 This term is used interchangably across most cloud providers, including Azure, Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
 
-Types of Compute Services
-
-
-Virtual Machines (IaaS)
+Virtual Machines (IaaS - Infrastructure as a Service)
 
 One of the most common types of compute service across all cloud providers is the virtual machine, or "VM".
 
@@ -19,3 +16,34 @@ Size of the resources
 Disk
 Memory
 CPU 
+Later in the course, you'll see how this works by getting hands-on with Azure's Virtual Machine Service.
+
+
+Lift and shift
+
+In the early days of cloud services, most established organizations were cautious in their adoption of cloud. The simplest way for them to get started, with minimal risk, was by utilizing a 'Lift and shift' approach.
+
+'Lift and shift' refers to migrating a physical server(s) into a cloud platform, such as Azure. 
+
+In other words, it's replacing a physical on-premises server with a virtual server in the cloud provider's datacentre.
+
+
+
+Azure Virtual Machines are an ideal choice when you need:
+
+Total control over the operating system (OS)
+
+The ability to run custom software
+
+To use custom hosting configurations
+
+
+Why would you use Azure Virtual Machines?
+
+1 During testing and development: VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them. 
+
+2 When running applications in the cloud: The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
+
+3 When extending your datacentre to the cloud: An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network.
+
+4 During disaster recovery: By extending an on-premises network to the cloud, you can get significant cost savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
