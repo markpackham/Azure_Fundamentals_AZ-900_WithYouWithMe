@@ -1,0 +1,21 @@
+What is 'Compute'?
+
+The term 'compute' simply refers to the on-demand use or provisioning of typical computing resources, such as disks, processors, memory and operating systems. 
+
+This term is used interchangably across most cloud providers, including Azure, Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+
+
+Types of Compute Services
+
+
+Virtual Machines (IaaS)
+
+One of the most common types of compute service across all cloud providers is the virtual machine, or "VM".
+
+This is a virtualised server. You choose:
+
+The operating system (Linux or Windows)
+Size of the resources
+Disk
+Memory
+CPU 
