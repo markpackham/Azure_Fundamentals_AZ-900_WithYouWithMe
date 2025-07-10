@@ -1,0 +1,16 @@
+Azure VM Solutions
+
+
+Scaling VMs in the Cloud
+
+It's no surprise that when it comes to configuring your VM solution to be able to scale, Azure, AWS and Google all provide extremely robust and simple to execute services to cater for this need.
+
+Being able to scale your VMs will likely:
+
+Improve server/application performance 
+Increase the overall 'uptime' (availability) of your server
+Ensure you are only paying for the additional resources when you need it
+Before we look at how we would scale a VM in Azure, let's look at the two valid ways in which you can scale a machine, 'scaling up' and 'scaling out'.
+
+
+By adding more resources, typically memory or CPU to your existing solution. This is also known as 'Vertical Scaling'
