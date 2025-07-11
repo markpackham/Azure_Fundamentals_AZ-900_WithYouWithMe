@@ -33,3 +33,65 @@ Route network traffic
 Filter network traffic
 
 Connect virtual networks
+
+
+
+Virtual Network Capabilities
+
+Isolation and segmentation
+Azure allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private Internet Protocol (IP) address space, using either public or private IP address ranges. You can divide that IP address space into subnets, and allocate part of the defined address space to each named subnet. 
+
+Internet communications
+A VM in Azure can connect out to the Internet by default. You can enable incoming connections from the Internet by defining a public IP address or a public load balancer. For VM management, you can connect via the Azure Command Line Interface (CLI), Remote Desktop Protocol (RDP), or Secure Shell (SSH).
+
+Communicate between Azure resources
+You'll want to enable Azure resources to communicate securely with each other. You can do that in one of two ways: 
+
+Virtual networks: Virtual networks can connect not only VMs, but other Azure resources, such as the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets.
+
+Service endpoints: You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. This approach enables you to link multiple Azure resources to virtual networks, thereby improving security and providing optimal routing between resources.
+
+
+Communicate with on-premises resources
+Azure virtual networks enable you to link resources together in your on-premises environment and within your Azure subscription, in effect creating a network that spans both your local and cloud environments. There are three mechanisms for you to achieve this connectivity: 
+
+Point-to-site Virtual Private Networks This approach is like a Virtual Private Network (VPN) connection that a computer outside your organization makes back into your corporate network, except that it's working in the opposite direction. In this case, the client computer initiates an encrypted VPN connection to Azure, connecting that computer to the Azure virtual network.
+
+Site-to-site Virtual Private Networks A site-to-site VPN links your on-premises VPN device or gateway to the Azure VPN gateway in a virtual network. In effect, the devices in Azure can appear as being on the local network. The connection is encrypted and works over the Internet.
+Azure ExpressRoute For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. Azure ExpressRoute provides dedicated private connectivity to Azure that does not travel over the Internet.
+
+
+Route network traffic
+By default, Azure will route traffic between subnets on any connected virtual networks, on-premises networks, and the Internet. However, you can control routing and override those settings as follows: 
+
+Route tables A route table allows you to define rules as to how traffic should be directed. You can create custom route tables that control how packets are routed between subnets.
+
+Border Gateway Protocol Border Gateway Protocol (BGP) works with Azure VPN gateways or ExpressRoute to propagate on-premises BGP routes to Azure virtual networks.
+
+
+Filter network traffic
+Azure virtual networks enable you to filter traffic between subnets by using the following approaches:
+
+Network security groups A network security group is an Azure resource that can contain multiple inbound and outbound security rules. You can define these rules to allow or block traffic, based on factors such as source and destination IP address, port, and protocol.
+Network virtual appliances A network virtual appliance is a specialized VM that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing Wide Area Network (WAN) optimization.
+
+Connect virtual networks
+
+You can link virtual networks together using virtual network peering. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions, allowing you to create a global interconnected network through Azure.
+
+
+Virtual Private Networks (VPNs)s are virtual tunnels used by organisations to connect distributed offices and users over a secure (encrypted) connection. 
+
+Just like the physical office or data center, businesses need a way to connect their on-premise data centers to their networks in the cloud. 
+
+This is where VPN gateway's come in!
+
+Azure VPN gateways 
+
+A VPN gateway is a type of Virtual Network Gateway. VPN gateways are deployed in Azure virtual networks and enable the following connectivity:
+
+Connect on-premises datacenters to Azure virtual networks through a site-to-site connection.
+
+Connect individual devices to Azure virtual networks through a point-to-site connection.
+
+Connect Azure virtual networks to other Azure virtual networks through a network-to-network connection.
