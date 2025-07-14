@@ -26,3 +26,89 @@ Amazon DynamoDB (AWS Cloud Platform)
 Azure Cosmos DB (Microsoft Cloud Platform)
 Google Cloud Bigtable (Google Cloud Platform)
 MongoDB (Open Source Platform)
+
+
+
+Azure Databases
+
+Azure Cosmos DB is a globally distributed, multi-model database service. You can elastically and independently scale throughput and storage across any number of Azure regions worldwide. 
+
+You can take advantage of fast, single-digit-millisecond data access by using any one of several popular APIs. Azure Cosmos DB provides comprehensive service level agreements for throughput, latency, availability, and consistency guarantees.
+
+Azure Cosmos DB supports schema-less data, which lets you build highly responsive and “Always On” applications to support constantly changing data. You can use this feature to store data that's updated and maintained by users around the world.
+
+
+Azure SQL Database is a platform as a service (PaaS) database engine. It handles most of the database management functions, such as upgrading, patching, backups, and monitoring, without user involvement. 
+
+SQL Database provides 99.99% availability. PaaS capabilities that are built into SQL Database enable you to focus on the domain-specific database administration and optimization activities that are critical for your business. 
+
+SQL Database is a fully managed service that has:
+
+Built-in high availability
+Automated backups, and other common maintenance operations. 
+Microsoft managed updates to the SQL service and operating system code. 
+
+
+Like Azure SQL Database, Azure SQL Managed Instance is a platform as a service (PaaS) database engine, which means that your company will be able to take advantage of the best features of moving your data to the cloud in a fully-managed environment. 
+
+For example, your company will no longer need to purchase and manage expensive hardware, and you won't have to maintain the additional overhead of managing your on-premises infrastructure. 
+
+On the other hand, your company will benefit from the quick provisioning and service scaling features of Azure, together with automated patching and version upgrades. 
+
+In addition, you'll be able to rest assured that your data will always be there when you need it through built-in high availability features and a 99.99% uptime service level agreement (SLA). 
+
+You'll also be able to protect your data with automated backups and a configurable backup retention period.
+
+
+
+
+Azure Database for MySQL is a relational database service in the cloud, and it's based on the MySQL Community Edition database engine, versions 5.6, 5.7, and 8.0. 
+
+With it, you have a 99.99 percent availability service level agreement from Azure, powered by a global network of Microsoft-managed datacentres. This helps keep your app running 24/7. 
+
+With every Azure Database for MySQL server, you take advantage of built-in security, fault tolerance, and data protection that you would otherwise have to buy or design, build, and manage. 
+
+With Azure Database for MySQL, you can use point-in-time restore to recover a server to an earlier state, as far back as 35 days.
+
+Azure Database for MySQL delivers:
+
+Built-in high availability with no additional cost.
+
+Predictable performance and inclusive, pay-as-you-go pricing.
+
+Scale as needed, within seconds.
+
+Ability to protect sensitive data at-rest and in-motion.
+
+Automatic backups.
+
+Enterprise-grade security and compliance.
+
+
+
+Azure Database for PostgreSQL is a relational database service in the cloud. The server software is based on the community version of the open-source PostgreSQL database engine. Your familiarity with tools and expertise with PostgreSQL is applicable when you're using Azure Database for PostgreSQL.
+
+Moreover, Azure Database for PostgreSQL delivers the following benefits:
+
+Built-in high availability compared to on-premises resources. There's no additional configuration, replication, or cost required to make sure your applications are always available.
+
+Simple and flexible pricing. You have predictable performance based on a selected pricing tier choice that includes software patching, automatic backups, monitoring, and security.
+
+Scale up or down as needed, within seconds. You can scale compute or storage independently as needed, to make sure you adapt your service to match usage.
+
+Adjustable automatic backups and point-in-time-restore for up to 35 days.
+
+Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion. This security covers data encryption on disk and SSL encryption between client and server communication.
+
+Azure Database for PostgreSQL is available in two deployment options: 
+
+Single Server and Hyperscale (Citus).
+Single Server
+
+
+
+Summary
+
+In this lesson, you saw how Azure SQL Database, Azure Database for MySQL, and Azure Database for PostgreSQL might enable a company to migrate its existing SQL Server, MySQL, and PostgreSQL databases to the cloud. 
+
+In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, including SQL, MongoDB, Cassandra, Tables, and Gremlin. You can use these to migrate your data to the cloud and retain or enhance your developers' skillsets.
