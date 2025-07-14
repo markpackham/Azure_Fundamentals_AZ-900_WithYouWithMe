@@ -1,0 +1,95 @@
+Cloud Storage Services
+
+Cloud Storage Types
+
+When it comes to storing any data in the cloud, regardless of the provider (Azure/AWS or Google), you're going to have to make a choice based on the type of data you're looking to store.
+
+Again - it isn't a choice of better vs worse, rather a decision in making the best choice for the partiuclar solution at hand. 
+
+Before we take a look at Azure's storage services in detail, we'll start more broadly in understanding what these types of storage are.
+
+
+File Storage
+This is probably the most basic type of data storage, which uses a heirarchical structure, typically organised by naming conventions. A typical example of this would be a shared drive on a corporate network containing word or excel documents.
+
+
+Block Storage
+This type of storage is generally used across SAN architectures as a way of logically separating different types of data, such as Virtual Machines, databases or virtual disks.
+SAN (Storage Area Network) architecture is a dedicated, high-speed network that connects servers to storage devices, enabling centralized storage management and high-performance data access. SANs are designed to provide block-level access to storage, meaning servers treat the storage as if it were directly attached, despite it being on a separate network. This architecture is commonly used by enterprises for business-critical applications requiring high throughput and low latency. 
+
+
+Object Storage
+These objects are generally stored in logical containers known as 'buckets', and may contain many different types of data, including log files, pictures, videos, databases, configuration files or archive files. Dropbox and Google Drive are such examples of this type of storage.
+
+
+Azure Storage Accounts
+
+In order to start using any of Azure storage solutions, you will need to have a storage account. Think of this as a logical container which allows you to manage all your storage options, which as you'll discover when you begin developing more solutions in Azure, will make it simpler and more secure to manage and control.
+
+Storage Options
+
+
+Disk
+As the name suggests, this type of storage provides disks for Azure Virtual Machines. Just as your home laptop or desktop has a physical disk, this type of storage is suited for data which needs to be persistently stored and accessed through your Virtual Machine. This would be an example of the 'block storage' type.
+
+
+Blobs
+The other main type of storage across all cloud platforms is for 'object storage', for which Azure calls 'blob storage'.  Unlike disk storage, this is completely independent of a virtual machine and it's main use case is for storing massive amounts of unstructured data, such as logs, archives, text or binary data.
+
+This makes it a great choice for:
+
+Serving images and video files
+Storage of files which require distributed access
+Streaming videos and audio files
+Archive data for backup and disaster recovery services
+
+
+Files
+This type of storage is similar to disk storage, with one main difference - it can be shared across multiple VMs and on-premise devices at the same time.
+
+Azure Files is fully managed file share in the cloud using the Server Message Block (SMB) and Network File System (NFS) protocols. This type of storage is most closely aligned to the 'file storage' type.
+
+This makes it a great candidate for:
+
+Sharing data between applications
+Storing configuration files to be accessed by multiple VMs
+Storage of diagnostic and metric logs for consolidated data analysis.
+
+
+Blob Storage: Access tiers
+
+While being able to store massive amounts of unstructured data without having to worry about running out of space is great, it can easily lead to a blow-out in costs.
+
+To help manage these costs, cloud providers like Azure provide options around how, when and where this data needs to be accessed. In Azure, these are defined in the following tiers:
+
+
+Hot access tier
+Optimised for storing data that is accessed frequently (for example, images for your website).
+
+
+Cool access tier
+Optimised for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
+
+
+Archive access tier
+Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+
+
+Which access tier should I choose?
+As with any cloud service, it's a matter of weighing up:
+
+Who or what needs to access the data?
+Will the data be uploaded or downloaded, or both?
+How important is this data to the business? Will it matter if it get's lost or becomes unavailable?
+How much will it cost?
+
+
+Four considerations to remember
+
+1 Only the hot and cool access tiers can be set at the account level. The archive access tier isn't available at the account level.
+
+2 Hot, cool, and archive tiers can be set at the blob level, during upload or after upload.
+
+3 Data in the cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool data, a slightly lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
+
+4 Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
