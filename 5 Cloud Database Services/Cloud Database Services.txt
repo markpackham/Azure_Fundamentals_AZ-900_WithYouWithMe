@@ -1,0 +1,28 @@
+Cloud Database Services
+
+
+SQL and NoSQL database:
+
+
+SQL Databases
+–
+SQL is a relational database, which is commonly used in ecommerce systems for Online Transaction Processing (OLTP). 
+There are many types of SQL products today, including:
+
+Microsoft SQL  (Licensed)
+MySQL (Open Source)
+MariaDB (Open Source)
+PostgreSQL (Open Source)
+Dj__8749lrk4LLrr-stock_image.jpg
+
+
+NoSQL Databases
+–
+NoSQL databases are a type of non-relational, and they are built to service heavy read/write loads which are desiged to scale up and down, and therefore they are more natively suited to running in the cloud. 
+
+An example of some of the most widely-used NoSQL databases today are:
+
+Amazon DynamoDB (AWS Cloud Platform)
+Azure Cosmos DB (Microsoft Cloud Platform)
+Google Cloud Bigtable (Google Cloud Platform)
+MongoDB (Open Source Platform)
