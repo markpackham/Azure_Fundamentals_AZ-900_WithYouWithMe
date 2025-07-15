@@ -1,1 +1,127 @@
 IoT (Internet of Things) Solutions in Azure
+
+IoT is short for the 'Internet of Things, ' a solution that enables devices to gather and relay information for data analysis. 
+
+For example, Smart devices are equipped with sensors that collect data. A few common sensors that measure attributes of the physical world include:
+
+Environmental sensors that capture temperature and humidity levels.
+
+Barcode, QR code, or optical character recognition (OCR) scanners.
+
+Geo-location and proximity sensors.
+
+Light, colour, and infrared sensors.
+
+Sound and ultrasonic sensors.
+
+Motion and touch sensors.
+
+Accelerometer and tilt sensors.
+
+Smoke, gas, and alcohol sensors.
+
+Error sensors to detect when there's a problem with the device.
+
+Mechanical sensors that detect anomalies or deformations.
+
+Flow, level, and pressure sensors for measuring gasses and liquids.
+
+
+
+What are the IoT solutions in Azure?
+
+All the major cloud vendors provide IoT solutions, and although they have slightly different configuration and management options, they all generally aim to provide their customers with the same outcomes:
+
+Centralised Command & Control
+Consolidated data visualisation and monitoring
+Communication Security
+Let's have a look at each of their solutions and how they help achieve those outcomes:
+
+
+Azure IoT Hub
+–
+A managed service hosted in the cloud acts as a central message hub for bi-directional communication between your IoT application and its devices. 
+
+You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution back end. 
+
+You can connect virtually any device to your IoT hub. The IoT Hub service supports communications from the device to the cloud and the cloud to the device. 
+
+It also supports multiple messaging patterns, such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. After an IoT hub receives messages from a device, it can route that message to other Azure services.
+
+From a cloud-to-device perspective, IoT Hub allows for command and control. You can have either manual or automated remote control of connected devices to instruct the device to open valves, set target temperatures, restart stuck devices, etc.
+
+IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.
+
+
+Azure IoT Central
+–
+Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. 
+
+The visual user interface (UI) makes it easy to connect new devices and watch as they begin sending telemetry or error messages. You can watch the overall performance across all devices in aggregate, and you can set up alerts that send notifications when a specific device needs maintenance. Finally, you can push firmware updates to the device.
+
+To help you get up and running quickly, IoT Central provides starter templates for common scenarios across various industries, such as retail, energy, healthcare, and government. You then customise the design starter templates directly in the UI by choosing from existing themes or creating your custom theme, setting the logo, etc. 
+
+With IoT Central, you can tailor the starter templates for the specific data sent from your devices, the reports you want to see, and the alerts you want to send.
+
+You can use the UI to control your devices remotely. This feature allows you to push a software update or modify a device's property. You can adjust the desired temperature for one or all of your refrigerated vending machines from directly inside IoT Central.
+
+A crucial part of IoT Central is the use of device templates. Using a device template lets you connect a device without any service-side coding. IoT Central uses the templates to construct the dashboards, alerts, etc. Device developers still need to create code to run on the devices, and that code must match the device template specification.
+
+
+
+Azure Sphere
+–
+Azure Sphere creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to the safe method of sending messages from the device to the message hub. Azure Sphere has built-in communication and security features for internet-connected devices.
+
+Azure Sphere comes in three parts:
+
+The first part is the Azure Sphere microcontroller unit (MCU), responsible for processing the operating system and signals from attached sensors. The following image displays the Seed Azure Sphere MT3620 Development Kit MCU, one of several starter kits available for prototyping and developing Azure Sphere applications.
+
+The second part is a customised Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
+
+The third part is Azure Sphere Security Service, also known as AS3. Its job is to ensure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first must authenticate itself, per device, which it does by using certificate-based authentication. If it shows successfully, AS3 checks to ensure that the device hasn't been tampered with. After establishing a secure communication channel, AS3 pushes any OS or approved customer-developed software updates to the device.
+
+After the Azure Sphere system has validated the device's authenticity and authenticated it, it can interact with other Azure IoT services by sending telemetry and error information.
+
+
+Is it critical to ensure that the device is not compromised?
+
+No manufacturers or customers want their devices to be maliciously compromised and used for criminal purposes. Still, it's more critical to ensure the integrity of an ATM than, say, a washing machine. 
+
+When security is a critical consideration in your product's design, the best product option is Azure Sphere, which provides a comprehensive end-to-end solution for IoT devices.
+
+Azure Sphere ensures a secure communication channel between the device and Azure by controlling everything from the hardware to the operating system and the authentication process. This ensures that the integrity of the device is uncompromised. 
+
+After a secure channel is established, messages can be received from the device securely, and messages or software updates can be sent to the device remotely.
+
+
+Do I need a dashboard for reporting and management?
+
+Your next decision will be your IoT solution's level of services you require. If you merely want to connect to your remote devices to receive telemetry and occasionally push updates, and you don't need any reporting capabilities, you might prefer to implement Azure IoT Hub by itself. Your programmers can still create a customised set of management tools and reports using the IoT Hub RESTful API.
+
+However, if you want a pre-built customisable user interface with which you can view and control your devices remotely, you might prefer to start with IoT Central. With this solution, you can hold a single device or all devices at once, and you can set up alerts for certain conditions, such as a device failure.
+
+IoT Central integrates with many Azure products, including IoT Hub, to create a dashboard with reports and management features. 
+
+The dashboard is based on starter templates for common industry and usage scenarios. You can use the dashboard generated by the starter template or customise it to suit your needs. You can have multiple dashboards and target them to a variety of users.
+
+
+When comparing IoT services in Azure, lookout for some of the critical criteria. Is security an essential requirement? If it is, then perhaps consider Azure Sphere. Do I need a centralised dashboard to manage everything? Maybe use IoT Central for this. If you want to receive telemetry, then perhaps consider IoTHub.  
+
+Telemetry is the automated remote collection and transmission of data from sensors to a central location for monitoring and analysis. It involves using sensors to measure various parameters, such as temperature, pressure, or electrical signals, and then wirelessly transmitting this data to a receiving system. This data is then analyzed to gain insights into the performance, health, and behavior of the monitored system. 
+
+Telemetry is used in a wide variety of industries, including: 
+Healthcare: Monitoring patient vital signs (like heart rate, blood pressure, and oxygen levels) using wearable devices or bedside monitors.
+IT and Software: Monitoring application performance, resource usage, and security threats.
+Aerospace: Tracking spacecraft performance and environmental conditions.
+Automotive: Monitoring vehicle performance and diagnostics.
+Agriculture: Monitoring environmental conditions like soil moisture and temperature.
+Meteorology: Collecting weather data for forecasting.
+Manufacturing: Monitoring machine performance and production processes. 
+
+Telemetry Benefits:
+Real-time Monitoring: Provides continuous, up-to-the-minute data for timely decision-making. 
+Remote Access: Allows monitoring of systems from anywhere with an internet connection. 
+Data-Driven Insights: Provides valuable data for optimizing performance, identifying issues, and improving efficiency. 
+Improved Safety: In healthcare, it can help detect and respond to potential problems quickly. 
+Enhanced Security: Helps identify and mitigate security threats by monitoring for unusual activities. 
