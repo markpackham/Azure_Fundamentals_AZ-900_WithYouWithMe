@@ -1,0 +1,29 @@
+Monitoring Solutions
+
+
+Monitoring 
+
+Modern software systems running in the cloud are complex, and gaining visibility into the health and performance of your application-hosting environment across all of its layers of services is challenging. Fortunately, several solutions from Microsoft can help you react quickly to outages, research intermittent issues, optimise your usage, and be proactive in handling future planned downtime. 
+
+Several fundamental questions or concerns face all companies that use the cloud.
+
+● Are we using the cloud correctly?
+
+●  Can we squeeze more performance out of our cloud spend? 
+
+● Are we spending more than we need to? 
+
+● Do we have our systems adequately secured? 
+
+● How resilient are our resources?
+
+● If we experience a regional outage, could we failover to another region? 
+
+● How can we diagnose and fix issues that occur intermittently? 
+
+● How can we quickly determine the cause of an outage? 
+
+● How can we learn about planned downtime? 
+
+
+At a high level, there are three primary Azure monitoring offerings, Azure Monitor, Azure Advisor and Azure Serice Health, each aimed at a specific audience and use case and provides a diverse set of tools, and services, programmatic APIs, and more.

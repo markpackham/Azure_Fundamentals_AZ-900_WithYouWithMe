@@ -28,3 +28,11 @@ Azure Databricks helps you unlock insights from all your data and build artifici
 
 
 Azure Data Lake Analytics is an on-demand analytics job service that simplifies big data. Instead of deploying, configuring, and tuning hardware, you write queries to transform your data and extract valuable insights. The analytics service can instantly handle jobs of any scale by setting the dial for how much power you need. You only pay for your job when running, making it more cost-effective. 
+
+
+
+Alternative cloud analytics solutions
+
+Although we are focusing on Azure in this course, it is worth looking at what some other providers offer and how they compare.
+
+You might notice that most are almost identical; however, they have different names, and some of their services bundle more than one feature into one service (EG. AWS EMS).

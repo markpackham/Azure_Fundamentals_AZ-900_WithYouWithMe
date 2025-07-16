@@ -1,0 +1,32 @@
+Serverless Solutions (Azure Functions & Logic Apps)
+
+Serverless computing is a term used to describe an execution environment set up and managed for you. You merely specify what you want to happen by writing code or connecting and configuring components in a visual editor. Then, you select the actions that trigger your functionality, such as a timer or an HTTP request. Best of all, you never have to worry about an outage, your code can scale instantly to meet demand, and you pay based only on the actual usage of your code. The term Serverless can be misleading, there are servers, but it's the code that provisions them. 
+
+
+Azure Functions
+
+With the Azure Functions service, you can host a single method or function by using a popular programming language in the cloud that runs in response to an event. An example of an event might be an HTTP request, a new message on a queue, or a message on a timer. 
+
+1. Azure Functions can be written in C#, Python, JavaScript, Typescript,    Java, and PowerShell. 
+
+2. Azure Functions scales automatically, and charges accrue only when a function is triggered.
+
+3. An Azure function is a stateless environment. A function behaves as if it's restarted every time it responds to an event. 
+
+4. The Azure Functions solution is ideal when you're concerned only with the code running your service and not the underlying platform or infrastructure. 
+
+
+Azure Logic Apps
+
+Logic Apps is a low-code/no-code development platform hosted as a cloud service. The service helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organisations. Logic Apps simplifies how you design and build scalable solutions, whether in the cloud, on-premises, etc. This solution covers app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration. 
+
+1. Azure Logic Apps is designed by a web-based designer and can execute logic that's triggered by Azure services without writing any code. 
+
+2. You build an app by linking triggers to actions with connectors.
+
+3. A trigger is an event (such as a timer) that causes an app to execute, sending a new message to a queue or an HTTP request. 
+
+
+You can call Azure Functions from Azure Logic Apps and vice versa. The primary difference between the two services is their intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. Although you can use Azure Functions to orchestrate a long-running business process that involves various connections, this was not its primary use case when it was designed. 
+
+A serverless orchestration service allows developers to manage and coordinate the execution of multiple serverless functions and other services within a workflow, without the need to manage the underlying infrastructure. It enables the creation of complex applications by connecting various functions and services into a cohesive sequence, handling state, errors, and data flow automatically. 

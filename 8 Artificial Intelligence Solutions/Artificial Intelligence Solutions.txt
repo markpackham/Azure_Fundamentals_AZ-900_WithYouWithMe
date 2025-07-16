@@ -1,0 +1,43 @@
+Artificial Intelligence Solutions
+
+
+“The pace of progress in artificial intelligence (I’m not referring to narrow AI) is incredibly fast. Unless you have direct exposure to groups like Deepmind, you have no idea how fast—it is growing at a pace close to exponential. The risk of something seriously dangerous happening is in the five-year time frame. 10 years at most.”
+
+—Elon Musk wrote in a comment on Edge.org
+
+
+A goal of AI is to create a software system that can adapt or learn something independently without being explicitly programmed to do it. There are two basic approaches to AI. The first is to employ a deep learning system modelled on the human mind's neural network, enabling it to discover, learn, and grow through experience.
+
+ The second approach is machine learning, a data science technique that uses existing data to train a model, test it, and then apply the model to new data to forecast future behaviours, outcomes, and trends. Forecasts or predictions from machine learning can make apps and devices more intelligent. For example, when you shop online, machine learning powers product recommendation systems that offer 117 products based on what you've bought and what other shoppers have bought who have purchased similar items in the past. 
+
+Machine learning is also used to detect credit card fraud by analysing each new transaction and using what it has learned from studying millions of fraudulent transactions. Virtually every device or software system that collects textual, visual, and audio data could feed a machine learning model that makes that device or software system smarter about how it functions in the future.  
+
+
+Services
+
+Azure Machine Learning is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result. Machine Learning gives complete control over the design and training of an algorithm using your data. After running experiments to test the model, you can deploy and use it in real-time via a web API endpoint.
+
+It uses models, and these are the definition of what your machine learning application is learning. It is a set of rules that defines how to use the provided data. Models attempt to find patterns based on the directions provided.
+
+It can train and evaluate predictive models using tools and programming languages familiar to data scientists.
+
+It will deploy the best-performing algorithm as an API to an endpoint so it can be consumed in real-time by other applications.
+
+
+Cognitive Services
+
+Provides prebuilt machine learning models that enable applications to see, hear, speak, understand, and even begin to reason. Use Azure Cognitive Services to solve general problems, such as analysing text for emotional sentiment or images to recognise objects or faces.
+
+While Azure Machine Learning requires you to bring your data and train models over that data, Azure Cognitive Services, for the most part, provides pre-trained models so that you can bring in your live data to get predictions.
+
+Azure Cognitive Services can be divided into the following categories:
+
+Language services: Allow your apps to process natural language with pre-built scripts, evaluate sentiment, and learn how to recognise what users want.
+Speech services: Convert speech into text and text into natural-sounding speech. Translate from one language to another and enable speaker verification and recognition.
+Vision services: Add recognition and identification capabilities when analysing pictures, videos, and other visual content.
+Decision services: Add personalised recommendations for each user that automatically improve each time they're used, moderate content to monitor and remove offensive or risky content, and detect abnormalities in your time series data.
+
+
+Azure Bot Service
+
+Azure Bot Service and Bot Framework are platforms for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case. Namely, it creates a virtual agent or chatbot that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, such as Azure Cognitive Services, to understand what their human counterparts are asking for. Bots can be used to shift simple, repetitive tasks, such as making a dinner reservation or gathering profile information, onto automated systems that might no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer or a sophisticated conversation that intelligently provides access to services. 
