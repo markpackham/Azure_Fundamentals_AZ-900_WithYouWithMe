@@ -27,3 +27,64 @@ Several fundamental questions or concerns face all companies that use the cloud.
 
 
 At a high level, there are three primary Azure monitoring offerings, Azure Monitor, Azure Advisor and Azure Serice Health, each aimed at a specific audience and use case and provides a diverse set of tools, and services, programmatic APIs, and more.
+
+
+Azure Monitor
+–
+Azure Monitor is a platform for collecting, analysing, visualising, and potentially taking action based on the metric and logging data from your entire Azure and on-premises environment. The following diagram illustrates just how comprehensive Azure Monitor is.  
+
+Additionally, you can use the data to help you react to critical events in real-time through alerts delivered to teams via SMS, email, and so on. Or you can use thresholds to trigger autoscaling functionality to scale up or down to meet the demand.
+
+
+Azure Advisor
+–
+Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs. 
+
+The advisor is designed to help you save time on cloud optimisation. The recommendation service includes suggested actions you can take right away, postpone, or dismiss. The recommendations are available via the Azure portal and the API, and you can set up notifications to alert you to new recommendations. The Advisor dashboard displays personalised guidance for all your subscriptions when you're in the Azure portal. You can use filters to select recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
+
+● Reliability: Used to ensure and improve the continuity of your business-critical applications. 
+● Security: Used to detect threats and vulnerabilities that might lead to security breaches. 
+● Performance: Used to improve the speed of your applications. 
+● Cost: Used to optimise and reduce your overall Azure spending. 
+● Operational Excellence is used to help you achieve process and workflow efficiency,         resource manageability, and best deployment practices.
+
+
+Azure Service Health
+–
+Azure Service Health provides a personalised view of the health of the Azure services, regions, and resources you rely on. The status.azure.com website displays only significant issues that broadly affect Azure customers and doesn't provide the complete picture. But Azure Service Health shows both major and more minor, localised problems that affect you. 
+
+Service issues are rare, but it's essential to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance. After an outage, Service Health provides official incident reports, called root cause analyses (RCAs), which you can share with stakeholders.
+
+Service Health helps you keep an eye on several event types: 
+
+● Service issues are problems in Azure, such as outages, that affect you right now. You can drill down to your engineering teams' affected services, regions, and updates and find ways to share and track the latest information. 
+
+● Planned maintenance events can affect your availability. You can drill down to the affected services, regions, and details to show how an event will affect you and what you need to do. Most of these events occur without impacting you and aren't shown here. In the rare case that a reboot is required, Service Health allows you to choose when to perform the maintenance to minimise downtime. 
+
+● Health advisories are issues that require you to act to avoid service interruption, including service retirements and breaking changes. Health advisories are announced far in advance to allow you to plan. 
+
+
+Points to remember with Azure Monitor 
+1 Constant Feed.
+
+2 Fully Managed. 
+
+3 Used for collecting, analysing and visualising the metric data for your entire Azure infrastructure.
+
+4 You can use the data to react to events in real-time such as scaling compute power up and down based on demand.
+
+
+
+Points to remember with Azure Advisor 
+
+1 Personalised recommendations on all your subscriptions. 
+
+2 Is a free service that advises you.
+
+3 Gives recommendations on cost, reliability, security, performance and operational excellence.
+
+
+Points to remember with Azure Service Health 
+1 Advises on Azure Services NOT your personal or company Azure environment.
+
+2 Helps you keep an eye on several event types such as service issues, planned maintenance and health advisories.

@@ -1,0 +1,12 @@
+DevOps and GitHub
+
+
+GitHub is arguably the world's most popular code repository for open-source software. Git is a decentralised source-code management tool commonly used in extensive IT and tech firms.
+
+Microsoft acquired GitHub in 2018 Microsoft uses GitHub extensively themselves.
+An accessible, open-source repository for your code and is excellent for versioning code and collaboration.
+
+
+GitHub Actions enables workflow automation with triggers for many lifecycle events. 
+
+One such example would be automating a CI/CD (or continuous development/continuous deployment) toolchain. A toolchain is a combination of software tools that aid in delivering, developing and managing software applications throughout a system's development life cycle. The output of one device in the toolchain is the input of the following tool in the toolchain. Typical tool functions include performing automated dependency updates to building and configuring the software, delivering the build artefacts to various locations, testing, etc.
