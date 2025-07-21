@@ -1,0 +1,53 @@
+Security In the Cloud
+
+Microsoft Defender for Cloud
+–
+Microsoft Defender for Cloud is a monitoring service that provides visibility of your security posture across all of your services, both on Azure and on-premises. Security posture refers to cybersecurity policies and controls and how well you can predict, prevent, and respond to security threats. Defender for Cloud can: 
+
+● Monitor security settings across on-premises and cloud workloads. 
+
+● Automatically apply required security settings to new resources as they come online. 
+
+● Provide security recommendations based on your current configurations, resources, and networks. 
+
+● Continuously monitor your resources and perform automatic security assessments to identify potential vulnerabilities before those vulnerabilities can be exploited. 
+
+Microsoft Defender for Cloud has replaced Microsoft Security Centre.
+
+
+
+Microsoft Sentinel
+–
+Security management on a large scale can benefit from a reliable security information and event management (SIEM) system. A SIEM system aggregates security data from many sources (as long as those sources support an open-standard logging format). It also provides capabilities for threat detection and response. 
+
+Microsoft Sentinel enables you to: 
+
+● Collect cloud data at scale. Collect data across all users, devices, applications, and infrastructure, both on-premises and multiple clouds. 
+
+● Detect previously undetected threats. Minimise false positives by using Microsoft's comprehensive analytics and threat intelligence. 
+
+● Investigate threats with artificial intelligence. Examine suspicious activities at scale, tapping into years of cybersecurity experience from Microsoft.
+
+
+Azure Key Vault
+–
+Azure Key Vault is a centralised cloud service for storing an application's secrets in a single, central location. It provides access control and logging capabilities to secure access to sensitive information. 
+
+Azure Key Vault can help you: 
+
+● Manage secrets You can use Key Vault to store securely and tightly control access to tokens, passwords, certificates, API keys, and other secrets.  
+
+● Manage encryption keys You can use Key Vault as a key management solution. Key Vault makes it easier to create and control the encryption keys to encrypt your data. 
+
+● Manage SSL/TLS certificates Key Vault enables you to provision, manage, and deploy your public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for your Azure resources and your internal resources.
+
+● Store secrets backed by hardware security modules (HSMs). These secrets and keys can be protected by software or FIPS 140-2 Level 2 validated HSMs.
+
+
+Azure Dedicated Host
+–
+On Azure, virtual machines (VMs) run on shared hardware that Microsoft manages. Although the underlying hardware is shared, your VM workloads are isolated from workloads that other Azure customers run. 
+
+Some organisations must follow regulatory compliance that requires them to be the only customer using the physical machine that hosts their virtual machines. 
+
+Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux. 
