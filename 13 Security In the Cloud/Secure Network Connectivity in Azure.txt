@@ -1,0 +1,100 @@
+Secure Network Connectivity in Azure
+
+Defence In-Depth 
+
+A defence-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorised access to data. You can think of it as measures that aim to recognise or slow down potential malicious activity. 
+
+
+Each layer protects so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. This approach removes reliance on any single layer of protection. It slows down an attack and provides alert telemetry that security teams can act upon, either automatically or manually.
+
+
+Here's a brief overview of the role of each layer:
+
+The physical security layer is the first line of defence to protect computing hardware in the data centre.
+
+The identity and access layer controls access to infrastructure and change control.
+
+The perimeter layer uses distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+
+The network layer limits communication between resources through segmentation and access controls.
+
+The compute layer secures access to virtual machines.
+
+The application layer helps ensure that applications are secure and free of security vulnerabilities.
+
+The data layer controls access to business and customer data that you need to protect.
+
+
+Physical Layer
+Physically securing access to buildings and controlling access to computing hardware within the data centre is the first defence line. 
+
+The intent is to provide physical safeguards against access to assets with physical security. These safeguards ensure that other layers can't be bypassed and loss or theft is handled appropriately. Microsoft uses various physical security mechanisms in its cloud data centres.
+
+
+Identity and access 
+At this layer, it's essential to:
+● Control access to infrastructure and change control. 
+● Use single sign-on (SSO) and multifactor authentication.
+● Audit events and changes. 
+
+The identity and access layer is all about ensuring that identities are secure, access is granted only to what's needed, and sign-in events and changes are logged. 
+
+
+Perimeter
+At this layer, it's essential to: 
+● Use DDoS protection to filter large scale attacks before they can affect the availability of a system for users. 
+● Use perimeter firewalls to identify and alert on malicious attacks against your network. 
+At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure. 
+
+
+Network
+At this layer, it's important to: 
+● Limit communication between resources. 
+● Deny by default. 
+● Restrict inbound internet access and limit outbound access where appropriate. 
+● Implement secure connectivity to on-premises networks. 
+
+At this layer, the focus is on limiting the network connectivity across all your resources to allow only what's required. By limiting this communication, you reduce the risk of an attack spreading to other systems in your network.
+
+
+Compute
+At this layer, it's essential to: 
+● Secure access to virtual machines. 
+● Implement endpoint protection on devices and keep systems patched and current.   
+Malware, unpatched systems, and improperly secured systems open your environment to attacks. 
+The focus in this layer is on making sure that your compute resources are secure and that you have the proper controls in place to minimise security issues.
+
+
+Application
+At this layer, it's important to: 
+● Ensure that applications are secure and free of vulnerabilities. 
+● Store sensitive application secrets in a secure storage medium. 
+● Make security a design requirement for all application development. 
+Integrating security into the application development lifecycle helps reduce the number of vulnerabilities introduced in code. Every development team should ensure that its applications are secure by default.
+
+
+Data
+In almost all cases, attackers are after data: 
+● Stored in a database. 
+● Stored on disk inside virtual machines. 
+● Stored in software as a service (SaaS) applications, such as Office 365. 
+● Managed through cloud storage. 
+Those who store and control access to data are responsible for ensuring that it's properly secured. 
+
+Often, regulatory requirements dictate the controls and processes that must be in place to ensure the data's confidentiality, integrity, and availability.
+
+
+
+Security Posture - Confidentiality, Integrity, and Availability CIA
+
+Your security posture is your organisation's ability to protect from and respond to security threats. The standard principles used to define a security posture are confidentiality, integrity, and availability, known collectively as CIA. Let us take a look at what these terms mean in more detail. 
+
+
+Confidentiality
+The principle of least privilege means restricting access to information. Giving people only what they need is the key.
+
+Integrity
+Prevent unauthorised changes to information.
+
+Availability
+Ensure that services are functioning and can be accessed only by authorised users.
