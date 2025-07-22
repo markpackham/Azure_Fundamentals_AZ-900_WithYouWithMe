@@ -1,2 +1,29 @@
 Azure Distributed Denial of Service (DDoS) Protection
 
+What is a DDoS attack?
+
+A distributed denial of service attack overwhelms and exhausts an application's resources, making the application slow or unresponsive to legitimate users.  DDoS attacks can target any publicly reachable resource through the internet, including websites.
+
+ddos-protection-overview-fig2.png
+Azure DDoS Protection
+
+Azure DDoS Protection (Standard) helps protect your Azure resources from DDoS attacks. When you combine DDoS Protection with recommended application design practices, you help provide a defence against DDoS attacks. DDoS Protection uses the scale and elasticity of Microsoft's global network to bring DDoS mitigation capacity to every Azure region. The DDoS Protection service helps protect your Azure applications by analysing and discarding DDoS traffic at the Azure network edge before it can affect your service's availability. 
+
+DDoS Protection provides these service tiers:
+
+● Basic The Basic service tier is automatically enabled for free as part of your Azure subscription. Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defences that Microsoft's online services use. The Basic service tier ensures that Azure infrastructure itself is not affected during a large-scale DDoS attack. The Azure global network distributes and mitigates attack traffic across Azure regions. 
+
+● Standard The Standard service tier provides additional mitigation capabilities that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is relatively easy to enable and requires no changes to your applications. The Standard tier provides always-on traffic monitoring and real-time mitigation of common network-level attacks. It gives the same defences that Microsoft's online services use. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated with resources deployed in virtual networks such as Azure Load Balancer and Application Gateway. The Azure global network is used to distribute and mitigate attack traffic across Azure regions 
+
+
+What kinds of attacks can DDoS Protection help prevent?
+
+Volumetric attacks
+The goal of this attack is to flood the network layer with a substantial amount of seemingly legitimate traffic.
+
+Protocol attacks
+These attacks render a target inaccessible by exploiting a weakness in the layer three and layer four protocol stack.
+
+Resource (application-layer) attacks (only with web application firewall)
+These attacks target web application packets to disrupt data transmission between hosts. It would be best to have a web application firewall (WAF) to protect against layer seven attacks. DDoS Protection Standard protects the WAF from volumetric and protocol attacks.
+
