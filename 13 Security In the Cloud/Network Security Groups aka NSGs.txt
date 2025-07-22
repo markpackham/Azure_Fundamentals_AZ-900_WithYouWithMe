@@ -1,2 +1,5 @@
 Network Security Groups / NSGs
 
+A network security group enables you to filter network traffic to and from Azure resources within an Azure virtual network. You can think of NSGs as an internal firewall. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol. 
+
+When you create a network security group, Azure creates a series of default rules to provide a baseline level of security. You can't remove the default rules, but you can override them by creating new rules with higher priorities. 
