@@ -1,2 +1,33 @@
 Identity Access Management (IAM) Fundamentals
 
+
+Identity
+
+When you sign in to an account, such as your Azure, email or Netflix account, you would have seen that it requires a username and password to access it. Acquiring access to the system needs an identity. This has become the primary security boundary as the system will validate if you are an approved user and have the right level of access for maintaining system data. Identity is the target of attacks rather than the network, as it is easier for a malicious agent to hack a user's username and password to gain access than to attack the network itself. Next, we will compare authentication, authorisation, multi-factor authentication, and single sign-on below.
+
+
+Authentication
+–
+This is the process of establishing the identity of a person or organisation wanting access to a particular system or resource by challenging them, and confirming if they are who they say they are. The most common form of authentication is username/password.
+
+
+Authorisation
+–
+This is the level of access the person or organisation has.  What data they are allowed access to, and what they can do it. For example, an individual may only be a particular resource like a database but only be able to read the data and not create it or modify it.
+
+
+Multifactor Authentication (MFA)
+–
+However, in the exact process of authentication, an additional form of identification is required. For example, a fingerprint or a code on your mobile phone. This provides an extra layer of security for your identity by having two or more elements to authenticate. 
+
+These elements are in 3 categories:
+
+Something the user knows: email address and password
+Something the user has: code to the mobile or authentication device
+Something the user is: biometric property like fingerprint or facial scan on the mobile
+MFA increases security by restricting the exposure of credentials like usernames and passwords. With it enabled, attacks with one or both credentials still require physical possession of the mobile or fingerprint to authenticate. With this in mind, it is common to have multifactor authentication enabled, which will add benefits to your security.
+
+
+Single Sign-On (SSO)
+–
+Also known as SSO, enables user identities to have one ID and one password for multiple resources and applications. For example, there is no need to create or delete a new identity if someone moves on. This also helps as users do tend to forget their passwords, especially having multiple accounts which can cause security problems and IT Helpdesk overload.

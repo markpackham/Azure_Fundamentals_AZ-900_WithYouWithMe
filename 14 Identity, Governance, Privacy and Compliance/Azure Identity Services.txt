@@ -1,0 +1,87 @@
+Azure Identity Services
+
+
+Azure AD Multi-Factor Authentication
+
+This is a service where Azure provides multifactor authentication capabilities and allows users to choose an additional form of authentication at sign-in. This can be done by using a phone call or mobile app notification. Services that provide Azure AD Multi-factor Authentication are:
+
+Azure Active Directory
+Multifactor authentication for Office 365 - A subset of Azure AD MFA that is part of an Office 365 subscription
+Azure AD free edition - for administrators with global admin access via Microsoft Authenticator app, phone call, or SMS code. You can also allow all users to have Azure AD MFA via the Microsoft Authenticator app only by enabling security defaults in the Azure AD tenant (A tenant is a representation of an organisation)
+Azure AD Premium (P1 & P2 licenses) - allows for a comprehensive and highly detailed configuration through the Conditional Access Policies.
+
+
+Azure AD Multi-Factor Authentication
+
+This is a service where Azure provides multifactor authentication capabilities and allows users to choose an additional form of authentication at sign-in. This can be done by using a phone call or mobile app notification. Services that provide Azure AD Multi-factor Authentication are:
+
+Azure Active Directory
+
+Multifactor authentication for Office 365 - A subset of Azure AD MFA that is part of an Office 365 subscription
+
+Azure AD free edition - for administrators with global admin access via Microsoft Authenticator app, phone call, or SMS code. You can also allow all users to have Azure AD MFA via the Microsoft Authenticator app only by enabling security defaults in the Azure AD tenant (A tenant is a representation of an organisation)
+
+Azure AD Premium (P1 & P2 licenses) - allows for a comprehensive and highly detailed configuration through the Conditional Access Policies.
+
+
+Conditional Access
+
+This is a tool that Azure AD MFA utilises to allow or deny users resources based on their identity signals. These signals included who the user is, where the user is located and what device the request access came from. This helps administrators protect the organisation's assets and allows users to have access whenever and wherever there is a need to access resources.
+
+It also can challenge users if required. For example, a user might not have to sign in again if they are in a known location but may have to if the user is in a different or unrecognised location expected.
+
+
+
+When to use Conditional Access
+
+Useful when you:
+
+* Require MFA access for an application. You can configure whether all users require MFA or certain users like administrators and whether MFA applies to access all networks or only untrusted networks.
+* Require access to services only through approved client applications. You might allow users access to Office 365 benefits from a mobile device as long as they use client-approved apps like Outlook.
+* Require users to access your application from only managed devices that meet your standards of security and compliance.
+* Block access from unknown or untrusted sources.
+
+
+What-if tool for Conditional Access
+
+*A tool which helps plan and troubleshoot Conditional Access policies
+* Used to model proposed Conditional Access policies across recent sign-in attempts from users to see what the impact is if those policies had been enabled
+* Useful for testing proposed Conditional Access policies before implementing them
+* It is available if you have an Azure AD Premium P1 or P2 license, or if you have a Microsoft 365 Business Premium license, you will have access to Conditional Access features.
+
+
+
+Active Directory
+–
+Active Directory: gives organisations the ability to manage multiple on-premise infrastructure components and systems using a single identity per user and is not monitored by Microsoft.
+
+
+Azure AD
+–
+Azure AD: cloud-based IAM service where you control the identity accounts and Microsoft makes sure that service is available globally. When connected to Active Directory, Microsoft can help protect by detecting suspicious sign-ins for no cost.
+
+
+Azure AD Connect
+–
+Synchronises user identities between on-premise AD and Azure AD
+Synchronisescloud-based IAM service where you control the identity accounts and Microsoft enables that service is available globally. changes between both systems
+
+
+
+Utilisation of Azure AD
+
+Azure AD is used by:
+
+- Administrators: use to control access to applications and resources based on business requirements
+- App Developers: use to provide a standards-based approach for adding functionality to applications like adding single sign-on (SSO) functionality to an app or allowing an app to work with a user's existing account.
+- Users: for self-management of identities without the use of administrators or help desk
+- Online service subscribers: Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are using Azure AD.
+
+
+
+Azure AD Services
+
+- Authentication: includes verifying identity to access applications and resources, providing functionality such as self-service password reset, MFA, a custom list of banned passwords, and smart lockout services.
+- Single Sign-On: SSO enables you to remember one username and one password to access multiple applications.
+- Application management: Manage your cloud and on-premises apps.
+- Device management: support the registration of devices. 
