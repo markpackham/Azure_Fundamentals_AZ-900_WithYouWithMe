@@ -1,0 +1,64 @@
+Governance - RBAC
+
+Cloud Governance
+
+Governance is the general process of establishing rules and policies, ensuring these rules and policies are enforced. Having a good strategy helps maintain control over resources and applications in the cloud and this ensure you stay compliant with:
+
+Industry Standards. For example ISO 27001 (specification for a information security management system or (ISMS) or Payment Card Industry Data Security Standard (PCI DSS)
+Corporate or organisational standards. For example ensuring data is encrypted rest or ensuring the network is secure.
+
+
+Most Benefit of Governance
+
+Multiple engineering teams working in Azure
+Multiple subscriptions to manage
+Regulatory requirements that must be enforced
+Standards that must be followed for cloud resources
+
+
+Scenario
+
+ Imagine you being the administrator of a large organisation of IT and engineering teams and you have to set up access to only resources they require for each individual and change or update the access to an existing or new resource. This would be wasting time and you may give people the wrong access due to the complexity. So what can you do? How can you manage this? This is where role-base access control would assist.
+
+
+Azure Role-based Access Control (RBAC)
+
+RBAC is a way in which an individual is granted only the permissions they need based on their role. Azure RBAC provides built-in roles that contain common access rules for resources and you can also build your own roles. Each role has an associated set of access permissions related to that role and when an individual or groups are assigned to one or more roles, they are given all the associated access permissions.
+
+
+Scope 
+
+This is a resource or set of resources that RBAC is applied to for access and scopes include:
+
+A management group (a collection of multiple subscriptions)
+A single subscription
+A resource group
+A single resource
+
+When the Owner role is assigned to a user at the management scope, the user can manage everything in all subscriptions with the management group
+
+When the Reader role is assigned to a group at the subscription scope, members of the group can view all resource groups and resource within that subscription
+
+When the Contributor role is assigned to an application at the resource group scope, the application can manage all resources of all types within the resource group, but not other resource groups within the subscription
+
+
+Examples of when to use Azure Role-based Access Control (RBAC)
+
+Allow one user to manage VMs in a subscription and another user to manage virtual networks
+Allow a database administrator group to manage SQL databases within a subscription
+Allow a user to manage all resources in a resource group. E.g. VMs, subnets, Blob storage
+Allow an application to manage all resources within a resource group
+
+
+Enforcement of RBAC
+
+RBAC is enforced on any action initiated on an Azure resource that passes through Azure Resource Manager; however, it doesn't enforce access permissions at the application or data level. The application itself must manage the application's security.
+
+RBAC allows you to perform specific actions such as writing, reading, or deleting when assigned a role. If you are assigned one role as a read for a resource group and a different role as write in the same resource group, you will have both read and write permissions within that resource group.
+
+
+Managing RBAC
+
+It can be applied to individuals, groups, or other special identity types such as service principals and managed identities. Identity types are used for applications and services to automate access to Azure resources.
+
+Managing access permissions is done via the Access control Identity Access Management (IAM) pane in the Azure portal, which shows who has access to what scope and what roles apply, along with granting or removing access from the IAM pane.

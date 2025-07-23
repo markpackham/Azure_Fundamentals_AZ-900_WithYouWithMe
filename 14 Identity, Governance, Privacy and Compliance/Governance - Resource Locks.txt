@@ -1,0 +1,37 @@
+Governance - Resource Locks
+
+Resource locks
+
+A resource lock prevents resources from being accidentally deleted or changed. It is a warning system that reminds you that a resource should not be deleted or changed. There is a risk that people with the right level of access with RBAC policies in place could delete critical cloud resources. Below we look at resource locks in detail.
+
+
+Manage resource locks
+Can be managed by:
+
+Azure portal (To view, add or delete, go to the Settings section of any resource Settings)
+Powershell
+Azure CLI
+an Azure Resource Manager Template
+
+
+Resource Lock levels
+Resource locks can be applied to an individual, resource group, or a subscription and can only be: 
+
+CanNotDelete - authorised personnel can read and modify a resource, but cannot delete the resource without removing the lock first
+ReadOnly - authorised personnel can read but cannot modify or delete the resource. Applying this lock is like restricting all authorised users to the permissions granted by the Reader role in RBAC
+
+
+Modifying Resource Locks
+
+To modify a locked resource, it must be removed first, then make the necessary changes that you have permission to conduct on the resource. Once completed, the resource lock can be reapplied. This protects administrators from giving you permissions that you maybe should not have.
+
+Additionally, resource locks apply regardless of RBAC permissions. Even if you are the resource owner, the lock must be removed before performing changes on the resource.
+
+
+Scenario
+
+You receive a call from work and an administrator accidentally deleted a resource lock on a critical resource which means this resource can now be modified or even deleted. How can you enforce the resource lock so this won't happen in the future?
+
+Resource locks and Azure Blueprints
+
+The protection becomes more robust when resource locks are combined with Azure Blueprints. Azure Blueprints enables you to define a set of standard Azure resources that the organisation requires, which means you can define in a blueprint that a resource must have a resource lock and automatically replace the resource lock if it is removed. We will discuss more on Azure Blueprints later in the course.
