@@ -1,0 +1,17 @@
+Governance - Azure Policy
+
+
+Azure Policy
+
+This is a service in Azure that enables creating, assigning, and managing policies that control and audit resources. These policies enforce different rules and effects over resource configurations so that the designs stay compliant with corporate standards.
+
+Defining Policies
+
+Azure Policy:
+
+- Initiatives: defined both individual policies and groups of related policies
+- Evaluates resources and highlight the resources that are not compliant with the policies that are created
+- It prevents non-compliant resources from being created
+- It comes with several built-in policy and initiative definitions that are under categories. For example, Storage,  Networking, Compute, etc
+- Automatically remediate non-compliant resources and configurations to ensure the integrity of the state of the resources. For instance, if a tag is removed, it can be automatically reapplied to the resource
+- Integrates with Azure DevOps by applying continuous integration and delivery pipeline policies that apply to the pre-deployment and post-deployment phases of an application
