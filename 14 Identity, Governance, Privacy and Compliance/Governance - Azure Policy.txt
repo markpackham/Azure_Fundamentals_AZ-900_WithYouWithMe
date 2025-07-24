@@ -15,3 +15,56 @@ Azure Policy:
 - It comes with several built-in policy and initiative definitions that are under categories. For example, Storage,  Networking, Compute, etc
 - Automatically remediate non-compliant resources and configurations to ensure the integrity of the state of the resources. For instance, if a tag is removed, it can be automatically reapplied to the resource
 - Integrates with Azure DevOps by applying continuous integration and delivery pipeline policies that apply to the pre-deployment and post-deployment phases of an application
+
+
+
+STEPS
+
+Create a policy definition
+A policy definition expresses what to evaluate and what action to take. Every definition has conditions to which it's enforced and has an effect when conditions are met.  Some examples of policy definitions:
+
+- Allowed virtual machines stock-keeping unit(SKU): A policy that specifies a set of VM SKUs that the organisation can deploy
+- Authorised locations: A policy that restricts the areas that organisation specify to deploy resources
+- System updates should be installed on your machine: A policy enabling Azure Security Center to recommend missing security system updates on servers.
+
+
+Assign the definition to resources
+To use policy definitions, it must be assigned to resources. A policy assignment is a policy definition that applies to a specific scope, whether a management group, single subscription, or resource group. 
+
+Policy assignments details:
+- inherited by all child resources within the scope
+- if applied to a resource group, used to all resources within a resource group
+- can exclude a subscope if there are specific child resources you need to except from
+
+
+Review the evaluation result
+Each resource is marked as compliant or non-compliant when a condition is evaluated against existing resources, reviewed the non-compliant policy results, and taken action as required.
+
+Policy Evaluation details:
+- Occurs every hour
+- If changes are made to a policy definition and create a policy assignment, the policy is evaluated over your resources within the hou
+
+
+
+Azure Policy Initiatives
+
+This is a way to group related policies into one set, and the initiative definition contains all the policy definitions to help track compliance state for a larger goal. For example, Azure Policy includes an initiative named Configure Advanced Threat Protection to be enabled on open-source relational databases. It allows advanced threat protection on non-Basic tier open-source relational databases to detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. 
+
+Under this imitative, the policy definitions include: 
+
+- Configure Advanced Threat Protection to be enabled on Azure Database for PostgreSQL servers: This policy is to detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit PostgreSQL databases
+- Configure Advanced Threat Protection to be enabled on Azure Database for MySQL servers: This policy is to detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit MySQL databases.
+
+There are other policy initiatives that contain over 100 separate policy definitions. Additionally, Azure Policy also includes initiatives that support regulatory compliance standards such as HIPPA and ISO 27001.
+
+
+Define An Initiative
+
+They can be defined by using Azure Portal or the command-line tools. From the Azure Portal, it can be listed by a search of built-initiatives already provided or self-created.
+
+
+Assign An Initiative
+
+Like policy assignment, initiative assignment is an initiative definition that can be assigned to a specific scope of a management group, a subscription, or a resource group.
+
+If there is only one policy assigned, the initiative allows increasing the number of policies over time, making it easier to add or remove policies without needing to change the policy assignment for the resources because the associated initiative remains assigned.
