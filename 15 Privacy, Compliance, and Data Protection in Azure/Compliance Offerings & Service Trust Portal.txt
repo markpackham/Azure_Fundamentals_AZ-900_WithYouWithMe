@@ -1,0 +1,19 @@
+Compliance Offerings & Service Trust Portal
+
+
+**** Microsoft has a Compliance Offerings page where you can learn of the compliance standards for countries across the World - You just need to know this place exists for the Exam
+https://learn.microsoft.com/en-us/compliance/regulatory/offering-home
+
+
+There is also the Service Trust Portal (STP)
+Learn how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
+https://servicetrust.microsoft.com/
+It gives Audit Reports via a Compliance Manager (if you are logged in)
+In this section are independent audit reports for different Microsoft’s Cloud services
+
+**** Exam key takeaway Service Trust Portal (STP) is where Microsoft gives business confidence it is following the standards of World Government bodies
+
+
+The Compliance Manager makes it easy to perform risk assessments of Microsoft’s cloud services we access it via the STP
+https://servicetrust.microsoft.com/ComplianceManager
+**** Exam, Compliance Manager will give you a score for your Azure Environment and give you suggestions on how to improve it
