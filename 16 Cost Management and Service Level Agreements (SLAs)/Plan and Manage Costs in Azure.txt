@@ -1,0 +1,29 @@
+Plan and Manage Costs in Azure
+
+
+Types of Azure Subscriptions
+
+Free Trial
+–
+Free trial: provides 12 months of popular free services, credit to explore any Azure service for 30 days, and more than 25 services that are always free (based on resource and region availability). Azure services are disabled when the trial ends or when the credit expires for paid services unless it's upgraded to a paid subscription.
+
+Pay-as-you-go
+–
+Pay-as-you-go: pay for what is used by attaching a credit or debit to the account. Organisations can apply for volume discounts and prepaid invoicing.
+
+Member offers
+–
+Member offers existing membership to certain Microsoft products and services might provide credits for the Azure account and reduced rates on Azure services. For example, member offers are available to Visual Studio subscribers, Microsoft Partner Network members, Microsoft for Startup members, and Microsoft Imagine members.
+
+
+Purchasing Azure Services
+
+There are three main ways to purchase services on Azure:
+
+1 Through an Enterprise Agreement: Larger customers (enterprise customers) can sign an Enterprise Agreement with Microsoft. The agreement commits them to spend a predetermined amount on Azure services over three years, and the service fee is typically paid annually. They receive the best-customised pricing based on the kinds and amounts of services planned to be utilised.
+
+2 Directly from the web: purchase Azure services directly from the Azure portal website and pay standard prices. Billed monthly, as a credit card, or through an invoice. The purchasing method is known as web direct.
+
+3 Through a Cloud Solution Provider (CSP): CSP is a Microsoft Partner helping to build solutions on top of Azure, and they bill for the Azure usage at a price they determine. CSP answers support questions and escalate them to Microsoft, as required. 
+
+You can bring up or provision Azure resources from the Azure portal or the command line. The Azure portal arranges products and services by category and you can select the services that fit your need.
