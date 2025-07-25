@@ -1,0 +1,34 @@
+Governance - Azure Blueprints
+
+
+Azure Blueprints
+
+This service defines a repeatable set of governance tools and standard Azure resources that an organisation requires in which, development teams can rapidly build and deploy new deployments knowing that they are building within organisational compliance with a set of built-in components that speed up development and deployment phases
+
+It coordinates the deployment of various resource templates and other artifacts, such as:
+
+- Role assignments
+- Policy assignments
+- Azure Resource Manager templates
+- Resource groups
+
+
+Azure Blueprints can:
+
+Preserve the relationship between the blueprint definition or what should be deployed and the blueprint assignment or what is deployed. Simply, Azure creates a record that associates a resource with the blueprint that defines it, helping track  and audit deployments
+
+Version control or versioning, assisting with tracking and commenting on changes to the blueprint
+
+
+Implementing a Azure Blueprint
+1) Create an Azure blueprint
+2) Assign the blueprint
+3) Track the blueprint assignments
+
+
+Blueprint artifacts
+
+An artefact is each component within a blueprint definition. Artefacts can have:
+
+No additional parameters(configurations)
+Contain one or more parameters that you can configure. A parameter's value can be specified when you create the blueprint definition or assign the blueprint definition to scope so that one standard blueprint is maintained but have the flexibility to determine the relevant configuration parameters at each scope where the definition is assigned

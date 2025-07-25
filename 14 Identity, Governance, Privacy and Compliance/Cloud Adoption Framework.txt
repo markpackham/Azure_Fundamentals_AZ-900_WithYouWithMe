@@ -1,0 +1,97 @@
+Cloud Adoption Framework
+
+
+Cloud Adoption Framework for Azure 
+
+Provides proven guidance to help with the cloud adoption journey and helps create and implement the business and technology strategies needed to succeed. It consists of tools, documentation, and proven practices and includes the stages that we will now go into to help build an adoption strategy.
+
+
+1. Define the strategy
+–
+Why move to the cloud, and what to get out of cloud migration? When defining cloud business strategy, understand cloud economics and consider the business impact, turnaround time, global reach, performance, etc. Steps in this stage:
+
+1 Define and document motivations: Meet with stakeholders and leadership to help answer why to move to the cloud
+2 Document business outcomes: Meet with leadership from finance, marketing, sales, and human resources to help document goals
+3 Evaluate financial considerations: Measure objectives and identify the return expected from a specific investment.
+4 Understand technical considerations: Evaluate technical considerations by selecting and completing a first technical project.
+
+
+2. Make a plan
+–
+Build a plan that maps aspirational goals to specific actions. A good plan helps ensure efforts map to the desired business outcome. Steps in this stage:
+
+1 Digital estate: Create an inventory of the existing digital assets and workloads planned to migrate to the cloud.
+2 Initial organisational alignment: Ensure that the right people are involved in the migration efforts, both from a technical standpoint as well as a cloud governance standpoint.
+3 Skills readiness plan: Build a plan that helps individuals build their skills to operate in the cloud.
+4 Cloud adaption plan: Build a comprehensive plan that aligns the development, operations, and business teams toward a shared cloud adoption goal.
+
+
+3. Ready the organisation
+–
+Create a landing zone or an environment in the cloud to begin hosting your workloads. Steps in this stage:
+
+1 Azure setup guide: Review the Azure setup guide to become familiar with the tools and approaches needed to create a landing zone.
+2 Azure landing zone: Begin to build out the Azure subscriptions that support each of the significant areas of the business. A landing zone includes cloud infrastructure, governance, accounting, and security capabilities.
+3 Expand the landing zone: Refine the landing zone to ensure it meets the operations, governance, and security needs. 
+4 Best practices: Start with recommended and proven approaches to help ensure that the cloud migration efforts are scalable and maintainable. 
+
+
+4. Adopt the cloud part 1- Migrate
+–
+This is the beginning of migrating the applications to the cloud. Along the way, there might be ways to modernise the applications and build innovative solutions that use cloud services. The Cloud Adoption Framework breaks this stage into two parts: migrate and innovate. Steps for the migrate are:
+
+1 Migrate the first workload: Use the Azure migration guide to deploy the first project to the cloud.
+2 Migration scenarios: Use additional in-depth guides to explore more complex migration scenarios.
+3 Best practices: Check in with the Azure cloud migration best practices checklist to ensure that the recommended procedures are followed.
+4 Process improvements: Identify ways to scale the migration process while requiring less effort. 
+
+
+4. Adopt the cloud part 2- Innovate
+–
+Steps for the innovate:
+
+1 Business value consensus: Verify that investments in innovations add value to the business and meet customer needs.
+2 Azure innovation guide: Use this guide to accelerate development and build a minimum viable product (MVP) idea.
+3 Best practices: Verify that the progress maps to recommended practices before moving forward.
+4 Feedback loops: Check in frequently with the customers to verify that what is being built is what they need.
+
+
+5. Govern and manage cloud environments: part 1
+–
+Now begin to form cloud governance and cloud management strategies. As the cloud estate changes over time, so do cloud governance processes and policies. The need to create resilient solutions that are constantly optimised. Steps for governing:
+
+1 Methodology: Consider the end-state solution, then define a method that incrementally takes the first steps to full cloud governance
+2 Benchmark: Use the governance benchmark tool (https://cafbaseline.com/?azure-portal=true) to assess the current state and future state to establish a vision for applying the framework
+3 Initial governance foundation: Create an MVP that captures the governance plan's first steps
+4 Improve the initial governance foundation: Iteratively add governance controls that address tangible risks toward the target end-state solution.
+
+
+5. Govern and manage cloud environments: part 2
+–
+So now we have gone through governance, now is the management stages:
+
+1 Establish a management baseline: Define the minimum commitment to operations management. A management baseline is the minimum set of tools and processes that should be applied to every asset in an environment
+2 Define business commitments: Document supported workloads to establish operational commitments with the business and agree on 3 cloud management investments for each workload
+3 Expand the management baseline: Apply recommended best practices to iterate on the initial management baseline
+4 Advanced operations and design principles: For workloads that require a higher level of a business commitment, perform a deeper architecture review to deliver on the resiliency and reliability commitments.
+
+
+
+Initial Cloud Governance Strategy
+
+At the beginning of any cloud governance implementation,  identify a cloud organisation structure that meets the business needs. This step often involves forming a cloud centre of excellence team (also called a cloud enablement team or a cloud custodian team). This team is empowered to implement governance practices from a centralised location for the entire organisation. Teams often start their Azure governance strategy at the subscription level. There are three main aspects to consider when this is created a managed subscription:
+
+
+Billing
+
+Creating one billing report per subscription. If a bill has multiple departments and needs to do a “chargeback” of cloud costs, one possible solution is to organize subscriptions by department or by the project. Resource tags can also help.  When defining how many subscriptions are required and what to name them, take into account the internal billing requirements. 
+
+
+Access Control
+
+A subscription is a deployment boundary for Azure resources. Every subscription is associated with an Azure Active Directory tenant. Each tenant provides administrators the ability to set granular access through defined roles by using Azure role-based access control. When the design for the subscription architecture, consider the deployment boundary factor. For example, do the need separate subscriptions for development and for production environments? With separate subscriptions, can control access to each one separately and isolate their resources from one another 
+
+
+Subscription Limits
+
+Subscriptions also have some resource limitations. For example, the maximum number of network Azure ExpressRoute circuits per subscription is 10. Those limits should be considered during the design phase. If the need to exceed those limits might need to add more subscriptions. If the maximum, there's no flexibility to increase it. Management groups are also available to assist with managing subscriptions. A management group manages access, policies, and compliance across multiple Azure subscriptions. 
